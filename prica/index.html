@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="hr" data-page="story">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Moja priča i tečaj | Leon Ilišin</title>
+  <meta name="description" content="Od Upworka i YouTube Shortsa do tri e-commerce brenda na tri tržišta. Cijela priča, devet lekcija o e-commerceu i tečaj po kojem vodim svoje brendove." />
+  <meta name="author" content="Leon Ilišin" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#fcffff" />
+  <link rel="canonical" href="https://leonilisin.com/prica/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hr_HR" />
+  <meta property="og:site_name" content="Leon Ilišin" />
+  <meta property="og:title" content="Drago mi je. Ja sam Leon." />
+  <meta property="og:description" content="Cijela priča, i sve što sam naučio usput. Na kraju je tečaj." />
+  <meta property="og:url" content="https://leonilisin.com/prica/" />
+  <meta property="og:image" content="https://leonilisin.com/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Drago mi je. Ja sam Leon." />
+  <meta name="twitter:description" content="Cijela priča, i sve što sam naučio usput. Na kraju je tečaj." />
+  <meta name="twitter:image" content="https://leonilisin.com/og.jpg" />
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) { d.classList.add('no-motion'); return; }
+      try {
+        if (sessionStorage.getItem('li-nav') === '1') { sessionStorage.removeItem('li-nav'); d.classList.add('is-entering'); }
+        else if (d.dataset.page === 'home' && !sessionStorage.getItem('li-intro') && !location.hash) { d.classList.add('is-intro'); }
+      } catch (e) {}
+      setTimeout(function () { if (!window.__liReady) d.classList.add('no-motion'); }, 4000);
+    })();
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PP62XLYM0V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PP62XLYM0V');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:opsz,wght@9..40,400..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&text=Leon&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/assets/img/leon.webp" type="image/webp" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "url": "https://leonilisin.com/prica/",
+    "name": "Moja priča | Leon Ilišin",
+    "inLanguage": "hr-HR",
+    "isPartOf": { "@id": "https://leonilisin.com/#website" },
+    "about": { "@id": "https://leonilisin.com/#leon" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Naslovnica", "item": "https://leonilisin.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Moja priča", "item": "https://leonilisin.com/prica/" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Preskoči na sadržaj</a>
+
+  <div class="curtain" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <header class="nav">
+    <div class="nav__in">
+      <a class="logo" href="/" aria-label="Leon Ilišin, naslovnica"><i>L</i>Leon Ilišin</a>
+      <nav class="nav__links" aria-label="Glavna navigacija">
+        <a href="/#brendovi">Brendovi</a>
+        <a href="/#kako-radim">Kako radim</a>
+        <a href="/prica/" aria-current="page">Moja priča</a>
+        <a class="nav__cta" href="/prica/#tecaj">Tečaj <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </nav>
+      <button class="burger" type="button" aria-label="Izbornik" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <span class="shape ring spin" style="width:240px;height:240px;right:-70px;top:22%;--d:30s" aria-hidden="true"></span>
+    <span class="shape dotgrid float" style="width:140px;height:140px;left:8%;bottom:20%" aria-hidden="true"></span>
+    <nav class="menu__links" aria-label="Mobilna navigacija">
+      <a href="/"><span>Naslovnica</span></a>
+      <a href="/#brendovi"><span>Brendovi</span></a>
+      <a href="/prica/"><span>Moja priča</span></a>
+      <a href="/prica/#tecaj"><span>Tečaj</span></a>
+      <a href="/prica/#kontakt"><span>Kontakt</span></a>
+    </nav>
+    <div class="menu__foot"><span>Leon Ilišin</span><span>Osijek · E-commerce · AI</span></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"></div>
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="shero sheet sheet--first" data-theme="white">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="pill" data-pop><i></i>Moja priča</p>
+          <h1 class="h1 shero__title" data-words aria-label="Drago mi je.">Drago <span class="mark">mi je.</span></h1>
+          <p class="shero__sub" data-reveal>Ja sam Leon. Ovo je cijela priča, i sve što sam naučio usput.</p>
+          <nav class="jump" data-reveal aria-label="Na ovoj stranici">
+            <a href="#ukratko">Ukratko</a>
+            <a href="#prica">Priča</a>
+            <a href="#lekcije">9 lekcija</a>
+            <a class="is-pink" href="#tecaj">Tečaj</a>
+            <a href="#kontakt">Kontakt</a>
+          </nav>
+        </div>
+        <div class="stage" data-stage>
+          <span class="stage__blob" data-pop data-depth="8"></span>
+          <span class="shape ring spin" style="width:30%;aspect-ratio:1;left:-7%;bottom:6%;color:var(--pink);--d:22s" aria-hidden="true"></span>
+          <span class="shape dotgrid float" style="width:24%;aspect-ratio:1;right:2%;bottom:-3%;color:var(--blue);--d:6s" aria-hidden="true"></span>
+          <svg class="shape squig float-b" style="width:26%;left:2%;top:3%;color:var(--pink)" viewBox="0 0 150 26" aria-hidden="true"><path d="M4 13q10-14 20 0t20 0 20 0 20 0 20 0 20 0 20 0"/></svg>
+          <span class="shape disc float-b" style="width:6%;aspect-ratio:1;right:26%;top:-1%;color:var(--navy);--d:5s" aria-hidden="true"></span>
+          <figure class="stage__photo" data-pop data-depth="-6">
+            <img src="/assets/img/leon.webp" alt="Leon Ilišin, osnivač e-commerce brendova iz Osijeka" width="864" height="1080" fetchpriority="high" />
+          </figure>
+          <div class="bubble" data-pop data-depth="20">Bok!</div>
+          <div class="toast float" data-pop data-depth="16" style="left:auto;right:-5%;top:auto;bottom:12%;--d:5s"><span class="toast__ico" style="background:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span><div><b>Leon Ilišin</b><span>Osijek, Hrvatska</span></div></div>
+          <div class="burst" data-pop data-depth="22" style="right:-2%;top:6%;width:25%"><svg class="spin" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><polygon points="50.0,0.0 58.9,11.0 71.7,5.0 74.9,18.7 89.1,18.8 86.0,32.6 98.7,38.9 90.0,50.0 98.7,61.1 86.0,67.4 89.1,81.2 74.9,81.3 71.7,95.0 58.9,89.0 50.0,100.0 41.1,89.0 28.3,95.0 25.1,81.3 10.9,81.2 14.0,67.4 1.3,61.1 10.0,50.0 1.3,38.9 14.0,32.6 10.9,18.8 25.1,18.7 28.3,5.0 41.1,11.0"/></svg><span><b>3</b>brenda</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UKRATKO ============ -->
+    <section class="sheet" data-theme="blue" id="ukratko">
+      <div class="wrap">
+        <header class="shead">
+          <p class="pill" data-pop><i></i>Ukratko</p>
+          <h2 class="h2" data-words><span class="mark">Ukratko.</span></h2>
+        </header>
+        <ol class="road">
+          <span class="road__line" aria-hidden="true"><i></i></span>
+          <li class="stop" data-reveal><span class="stop__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span><p class="stop__what">Krenuo sam na Upworku.</p><p class="stop__res">Ništa.</p></li>
+          <li class="stop" data-reveal><span class="stop__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span><p class="stop__what">Probao YouTube Shorts.</p><p class="stop__res">Ništa.</p></li>
+          <li class="stop stop--some" data-reveal><span class="stop__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg></span><p class="stop__what">Radio AI automacije za lokalne biznise.</p><p class="stop__res">Nešto, ali premalo.</p></li>
+          <li class="stop stop--some" data-reveal><span class="stop__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><p class="stop__what">Ušao u e-commerce.</p></li>
+          <li class="stop stop--win" data-reveal><span class="stop__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span><p class="stop__what">Pokrenuo tri brenda na tri tržišta.</p><p class="stop__res">190.000 €+ prodaje.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTERS 1-4 ============ -->
+    <section class="sheet" data-theme="white" id="prica">
+      <div class="wrap">
+        <div class="chaps">
+
+          <article class="chap">
+            <div class="chap__media">
+              <div class="scene" data-pop>
+                <div class="scene__pic"><img src="/assets/img/ch-laptop.webp" alt="Laptop na praznom stolu noću" width="1160" height="1440" loading="lazy" /></div>
+                <div class="fly" aria-hidden="true"><div class="chip" style="--k:0"><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span><div>Ponuda poslana<small>Čekam odgovor…</small></div></div><div class="chip" style="--k:1"><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span><div>Ponuda poslana<small>Čekam odgovor…</small></div></div><div class="chip" style="--k:2"><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span><div>Ponuda poslana<small>Čekam odgovor…</small></div></div></div>
+                <div class="chip float" style="right:7%;top:9%;--r:3deg" aria-hidden="true"><div>0 recenzija<small><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.5l6.5-.9z"/></svg></span></small></div></div>
+                <div class="chip chip--pink float-b" style="right:9%;bottom:12%;--r:-4deg" aria-hidden="true">50 ljudi na jedan posao</div>
+              </div>
+            </div>
+            <div class="chap__body">
+              <p class="chap__no" data-pop><b>01</b>Poglavlje 01 / 07</p>
+              <h2 class="h2 chap__title" data-words>Upwork<span class="dot">.</span></h2>
+              <div class="prose">
+                <p>Kao i svi, krenuo sam tamo gdje svi kreću.</p>
+                <p>Napravio sam profil, napisao opis i počeo slati ponude.</p>
+                <p>Na svaki posao javi se pedeset ljudi. Neki s pet godina iskustva i stotinu recenzija.</p>
+                <p class="big">Ja sam imao nula recenzija.</p>
+                <p>Možeš pretpostaviti kako je to išlo.</p>
+              </div>
+              <aside class="lesson">
+                <svg class="burst-mini" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><polygon points="50.0,0.0 58.0,20.1 75.0,6.7 71.9,28.1 93.3,25.0 79.9,42.0 100.0,50.0 79.9,58.0 93.3,75.0 71.9,71.9 75.0,93.3 58.0,79.9 50.0,100.0 42.0,79.9 25.0,93.3 28.1,71.9 6.7,75.0 20.1,58.0 0.0,50.0 20.1,42.0 6.7,25.0 28.1,28.1 25.0,6.7 42.0,20.1"/></svg>
+                <span class="lesson__tag">Prva lekcija</span>
+                <p>Kad se natječeš cijenom, uvijek postoji netko jeftiniji.</p>
+              </aside>
+            </div>
+          </article>
+
+          <article class="chap chap--flip">
+            <div class="chap__media">
+              <div class="scene scene--pink" data-pop>
+                <div class="scene__pic"><img src="/assets/img/ch-phone.webp" alt="Mobitel na stalku ispred ring svjetla" width="1160" height="1440" loading="lazy" /></div>
+                <div class="chip float" style="left:7%;top:9%;--r:-3deg" aria-hidden="true"><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></span><div><span class="count" data-roll="12480">12.480</span><small>pregleda</small></div></div>
+                <div class="chip chip--blue float-b" style="right:7%;bottom:11%;--r:3deg" aria-hidden="true"><div>0 €<small>zarade</small></div></div>
+                <div class="chip float" style="left:9%;bottom:24%;--r:4deg;--dl:1s" aria-hidden="true"><span class="x" style="background:var(--pink)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2v13.6a1 1 0 0 0 1.5.86l11-6.8a1 1 0 0 0 0-1.72l-11-6.8A1 1 0 0 0 8 5.2z"/></svg></span>Objavljeno</div>
+              </div>
+            </div>
+            <div class="chap__body">
+              <p class="chap__no" data-pop><b>02</b>Poglavlje 02 / 07</p>
+              <h2 class="h2 chap__title" data-words>YouTube <span class="mark">Shorts.</span></h2>
+              <div class="prose">
+                <p>Ok. Ako me nitko ne želi zaposliti, napravit ću publiku.</p>
+                <p>Snimao sam. Montirao. Objavljivao.</p>
+                <p>Pregledi su dolazili i odlazili.</p>
+                <p class="big">Novac nije dolazio uopće.</p>
+              </div>
+              <aside class="lesson">
+                <svg class="burst-mini" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><polygon points="50.0,0.0 58.0,20.1 75.0,6.7 71.9,28.1 93.3,25.0 79.9,42.0 100.0,50.0 79.9,58.0 93.3,75.0 71.9,71.9 75.0,93.3 58.0,79.9 50.0,100.0 42.0,79.9 25.0,93.3 28.1,71.9 6.7,75.0 20.1,58.0 0.0,50.0 20.1,42.0 6.7,25.0 28.1,28.1 25.0,6.7 42.0,20.1"/></svg>
+                <span class="lesson__tag">Druga lekcija</span>
+                <p>Pregledi nisu prodaja.</p>
+              </aside>
+            </div>
+          </article>
+
+          <article class="chap">
+            <div class="chap__media">
+              <div class="scene" data-pop>
+                <div class="scene__pic"><img src="/assets/img/ch-workshop.webp" alt="Radni stol obrtnika s alatom" width="1160" height="1440" loading="lazy" /></div>
+                <div class="ceil" aria-hidden="true"><b>Strop</b><i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i><i style="--k:5"></i></div>
+                <div class="chip chip--pink float" style="left:7%;top:9%;--r:-3deg" aria-hidden="true">Novi klijent = još sati</div>
+              </div>
+            </div>
+            <div class="chap__body">
+              <p class="chap__no" data-pop><b>03</b>Poglavlje 03 / 07</p>
+              <h2 class="h2 chap__title" data-words>AI automacije za <span class="mark">lokalne biznise.</span></h2>
+              <div class="prose">
+                <p>Onda sam pogledao oko sebe.</p>
+                <p>Obrtnici, saloni, servisi. Ljudi koji rade dobar posao, a online ih skoro nema.</p>
+                <p>Počeo sam im raditi AI automacije i web stranice. Da bih došao do klijenata, napravio sam si alat koji sam pronalazi firme i njihove kontakte, i sustav koji ih sam kontaktira.</p>
+                <p class="big">I to je radilo. Prvi pravi novac.</p>
+                <p>Ali brzo sam udario u strop.</p>
+                <p>Svaki novi klijent značio je još sati. Ako stanem ja, staje i novac.</p>
+              </div>
+              <aside class="lesson">
+                <svg class="burst-mini" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><polygon points="50.0,0.0 58.0,20.1 75.0,6.7 71.9,28.1 93.3,25.0 79.9,42.0 100.0,50.0 79.9,58.0 93.3,75.0 71.9,71.9 75.0,93.3 58.0,79.9 50.0,100.0 42.0,79.9 25.0,93.3 28.1,71.9 6.7,75.0 20.1,58.0 0.0,50.0 20.1,42.0 6.7,25.0 28.1,28.1 25.0,6.7 42.0,20.1"/></svg>
+                <span class="lesson__tag">Treća lekcija</span>
+                <p>Kad prodaješ svoje vrijeme, zarada ima strop.</p>
+              </aside>
+              <p class="pivot" data-words>Htio sam nešto što prodaje <span class="mark mark--blue">dok ja spavam.</span></p>
+            </div>
+          </article>
+
+          <article class="chap chap--flip">
+            <div class="chap__media">
+              <div class="scene scene--pink" data-pop>
+                <div class="scene__pic"><img src="/assets/img/ch-boxes.webp" alt="Složene kartonske kutije pod reflektorom" width="1160" height="1440" loading="lazy" /></div>
+                <div class="chip float" style="left:6%;top:10%;--r:-4deg" aria-hidden="true"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div>Proizvod<small>pojeo novac</small></div></div>
+                <div class="chip float-b" style="right:5%;top:40%;--r:3deg" aria-hidden="true"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div>Oglas<small>ugašen nakon 2 dana</small></div></div>
+                <div class="chip chip--blue float" style="left:9%;bottom:10%;--r:2deg;--dl:1.2s" aria-hidden="true"><span class="ok" style="background:var(--white);color:var(--blue)"><span class="spin" style="display:grid;place-items:center;width:100%;height:100%;--d:3s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4h-4"/></svg></span></span><div>Stranica<small>verzija 5</small></div></div>
+              </div>
+            </div>
+            <div class="chap__body">
+              <p class="chap__no" data-pop><b>04</b>Poglavlje 04 / 07</p>
+              <h2 class="h2 chap__title" data-words>E-commerce<span class="dot">.</span></h2>
+              <div class="prose">
+                <p>Ušao sam u dropshipping.</p>
+                <p>I ne, nije krenulo odmah.</p>
+                <p>Neki proizvodi su pojeli novac i nisu vratili ništa. Neke oglase sam ugasio nakon dva dana. Neke stranice sam prepisao pet puta.</p>
+                <p class="big">Ali svaki promašaj je bio lekcija koju više ne moram platiti.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTERS 5-7 ============ -->
+    <section class="sheet" data-theme="soft">
+      <div class="wrap">
+        <div class="chaps">
+
+          <article class="chap" id="luminiosa">
+            <div class="chap__media">
+              <div data-pop><a class="browser" href="https://luminiosa.com" target="_blank" rel="noopener" data-cursor="Posjeti" aria-label="Otvori luminiosa.com">
+              <div class="browser__bar"><i></i><i></i><i></i><span>luminiosa.com</span></div>
+              <div class="browser__shot"><img src="/assets/img/brand-luminiosa.webp" alt="Naslovnica trgovine Luminiosa" width="1600" height="889" loading="lazy" /></div>
+            </a></div>
+              <a class="link" href="https://luminiosa.com" target="_blank" rel="noopener" style="--hl:var(--blue);--hl-fg:var(--white)">luminiosa.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+            <div class="chap__body">
+              <p class="chap__no" data-pop><b>05</b>Poglavlje 05 / 07</p>
+              <h2 class="h2 chap__title" data-words>Luminiosa<span class="dot">.</span></h2>
+              <p class="chap__date" data-pop>Prosinac 2025.</p>
+              <div class="prose">
+                <p>Proizvod za ljude kojima se bol u vratu i potiljku vraća svaki dan. Probali su tablete, masaže i jastuke, i ništa nije trajalo.</p>
+                <p>Ovaj put sam sve napravio drugačije. Proizvod koji rješava pravi problem. Tržište koje poznajem. Pouzeće i brza dostava, jer tako kupuje Hrvatska. Stranice koje pričaju priču, a ne nabrajaju karakteristike.</p>
+                <p class="big">Krenulo je brže nego što sam i sam očekivao.</p>
+              </div>
+              <div class="stats">
+                <div class="stat" data-pop><p class="n"><span data-count="190000">190.000</span> €+</p><p class="l">prodaje</p></div>
+                <div class="stat" data-pop><p class="n"><span data-count="3450">3.450</span>+</p><p class="l">kupaca</p></div>
+                <div class="stat" data-pop><p class="n">4,8 / 5</p><p class="l">prosječna ocjena</p></div>
+                <div class="stat" data-pop><p class="n n--txt">Hrvatska, regija, a sada i SAD</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="chap chap--flip" id="stillhush">
+            <div class="chap__media">
+              <div data-pop><a class="browser" href="https://stillhush.com" target="_blank" rel="noopener" data-cursor="Posjeti" aria-label="Otvori stillhush.com">
+              <div class="browser__bar"><i></i><i></i><i></i><span>stillhush.com</span></div>
+              <div class="browser__shot"><img src="/assets/img/brand-stillhush.webp" alt="Naslovnica trgovine Stillhush" width="1600" height="889" loading="lazy" /></div>
+            </a></div>
+              <a class="link" href="https://stillhush.com" target="_blank" rel="noopener" style="--hl:var(--blue);--hl-fg:var(--white)">stillhush.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+            <div class="chap__body">
+              <p class="chap__no" data-pop><b>06</b>Poglavlje 06 / 07</p>
+              <h2 class="h2 chap__title" data-words>Stillhush<span class="dot">.</span></h2>
+              <div class="prose">
+                <p>Nakon Luminiose htio sam znati mogu li isto napraviti na tržištu koje ne poznajem.</p>
+                <p>Stillhush je brend za Ujedinjeno Kraljevstvo. Drugi jezik, druga valuta, drugi kupci. I zdravstvena kategorija, gdje kupci već znaju za svaku prevaru i svaka pretjerana rečenica u oglasu te odmah košta povjerenja.</p>
+                <p>Kad prvi proizvod nije davao brojke koje sam htio, nisam čekao mjesecima. Isti store sam u jednom danu okrenuo na novi proizvod, s novom stranicom i novom ponudom.</p>
+                <p>Tu sam naučio da brend nije proizvod.</p>
+              </div>
+              <p class="pivot" data-words>Brend je sustav koji možeš <span class="mark">preusmjeriti.</span></p>
+            </div>
+          </article>
+
+          <article class="chap" id="crushrose">
+            <div class="chap__media">
+              <div data-pop><a class="browser" href="https://crushrose.com" target="_blank" rel="noopener" data-cursor="Posjeti" aria-label="Otvori crushrose.com">
+              <div class="browser__bar"><i></i><i></i><i></i><span>crushrose.com</span></div>
+              <div class="browser__shot"><img src="/assets/img/brand-crushrose.webp" alt="Naslovnica trgovine CrushRose" width="1600" height="889" loading="lazy" /></div>
+            </a></div>
+              <a class="link" href="https://crushrose.com" target="_blank" rel="noopener" style="--hl:var(--blue);--hl-fg:var(--white)">crushrose.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+            <div class="chap__body">
+              <p class="chap__no" data-pop><b>07</b>Poglavlje 07 / 07</p>
+              <h2 class="h2 chap__title" data-words>CrushRose<span class="dot">.</span></h2>
+              <div class="prose">
+                <p>Treći brend. Poklon za Hrvatsku: medo s vječnom ružom i ogrlicom unutra.</p>
+                <p>Ovdje sam sve što sam naučio stavio u jedan sustav.</p>
+              </div>
+              <ol class="steps">
+                <li data-n="1">Video oglasi testirani po publici.</li>
+                <li data-n="2">Stranica proizvoda prepisana po onome što su kupci stvarno pitali.</li>
+                <li data-n="3">Ponuda „2 za“ koja diže vrijednost narudžbe.</li>
+                <li data-n="4">Automatski mailovi koji svakome tko ostavi košaricu šalju podsjetnik, pa popust, pa veći popust.</li>
+              </ol>
+              <div class="prose">
+                <p class="big">Sve to radi samo. Dok ja radim na sljedećem.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LESSONS ============ -->
+    <section class="sheet" data-theme="pink" id="lekcije">
+      <div class="wrap">
+        <header class="shead">
+          <p class="pill" data-pop><i></i>Devet lekcija</p>
+          <h2 class="h2" data-words>Što sam naučio o <span class="mark">e-commerceu.</span></h2>
+          <p class="lead" data-reveal>Nakon tri brenda, tri tržišta i puno promašaja, ovo je ono što stvarno vrijedi:</p>
+        </header>
+        <ol class="lgrid">
+          <li class="lcard" data-pop>
+            <span class="lcard__no">1</span>
+            <h3 class="lcard__title">Proizvod je 80 % posla.</h3>
+            <p class="lcard__text">Najbolji oglas na svijetu neće prodati proizvod koji nitko ne treba. Prije nego potrošim euro na oglase, provjerim tko ga već prodaje, koliko dugo, i kakve oglase vrti.</p>
+          </li>
+          <li class="lcard" data-pop>
+            <span class="lcard__no">2</span>
+            <h3 class="lcard__title">Ponuda prodaje, ne proizvod.</h3>
+            <p class="lcard__text">Isti proizvod s boljom ponudom prodaje dvostruko. Paketi, „2 za“, jasna garancija, pouzeće tamo gdje ga ljudi traže.</p>
+          </li>
+          <li class="lcard" data-pop>
+            <span class="lcard__no">3</span>
+            <h3 class="lcard__title">Stranica mora pričati priču.</h3>
+            <p class="lcard__text">Kupac ne kupuje „42 °C i EMS impulse“. Kupuje to da mu glava ne bude teška u pet popodne. Advertoriali i listicli prodaju hladnom prometu ono što obična stranica proizvoda ne može.</p>
+          </li>
+          <li class="lcard" data-pop>
+            <span class="lcard__no">4</span>
+            <h3 class="lcard__title">Oglas je targetiranje.</h3>
+            <p class="lcard__text">Svaki oglas govori jednoj osobi s jednim problemom. Ako pokušaš govoriti svima, ne čuje te nitko. Prva rečenica odlučuje sve.</p>
+          </li>
+          <li class="lcard" data-pop>
+            <span class="lcard__no">5</span>
+            <h3 class="lcard__title">Testiraj kao znanstvenik.</h3>
+            <p class="lcard__text">Jedna promjena po testu. Jasna pravila kad se oglas gasi, a kad dobiva više novca. Bez emocija.</p>
+          </li>
+          <li class="lcard" data-pop>
+            <span class="lcard__no">6</span>
+            <h3 class="lcard__title">Prati svaki euro.</h3>
+            <p class="lcard__text">Ako ne znaš koji oglas je doveo koju kupnju, ne znaš ni što ponoviti. Tracking se postavlja prvi dan, ne kad nešto krene.</p>
+          </li>
+          <li class="lcard" data-pop>
+            <span class="lcard__no">7</span>
+            <h3 class="lcard__title">Novac je u onima koji su skoro kupili.</h3>
+            <p class="lcard__text">Napuštene košarice, mailovi, ponovna kupnja. Tu je zarada koju većina ostavi na stolu.</p>
+          </li>
+          <li class="lcard" data-pop>
+            <span class="lcard__no">8</span>
+            <h3 class="lcard__title">Lokalno tržište ima svoja pravila.</h3>
+            <p class="lcard__text">Hrvatska kupuje pouzećem i čita na hrvatskom, ne na prevedenom engleskom. UK i SAD kupuju karticom i traže dokaze. Isti proizvod, potpuno druga stranica.</p>
+          </li>
+          <li class="lcard" data-pop>
+            <span class="lcard__no">9</span>
+            <h3 class="lcard__title">AI je tvoj tim.</h3>
+            <p class="lcard__text">Research, tekstovi, kreative, automacije. Sve što bi inače radila agencija, danas može jedna osoba s pravim sustavom.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ NOW ============ -->
+    <section class="sheet" data-theme="white" id="sada">
+      <div class="wrap">
+        <header class="shead">
+          <p class="pill" data-pop><i></i>Gdje sam sada</p>
+          <h2 class="h2" data-words>Gdje sam <span class="mark">sada.</span></h2>
+        </header>
+        <div class="nowlist">
+          <div class="nowrow" data-reveal><p>Luminiosa <span>raste i ide u SAD.</span></p><span class="status status--scale"><i></i>Skalira</span></div>
+          <div class="nowrow" data-reveal><p>Stillhush <span>testira UK.</span></p><span class="status status--test"><i></i>Test</span></div>
+          <div class="nowrow" data-reveal><p>CrushRose <span>prodaje u Hrvatskoj.</span></p><span class="status status--live"><i></i>Live</span></div>
+        </div>
+        <p class="now__lead" data-reveal>I svaki dan me netko pita isto pitanje:</p>
+      </div>
+    </section>
+
+    <section class="sheet ask" data-theme="blue" aria-label="Pitanje">
+      <span class="qm float" style="font-size:16vw;left:5%;top:8%;--r:-14deg" aria-hidden="true">?</span>
+      <span class="qm float-b" style="font-size:9vw;right:9%;top:14%;--r:12deg" aria-hidden="true">?</span>
+      <span class="qm float" style="font-size:12vw;right:16%;bottom:10%;--r:-8deg;--dl:1s" aria-hidden="true">?</span>
+      <span class="qm float-b" style="font-size:7vw;left:18%;bottom:14%;--r:18deg" aria-hidden="true">?</span>
+      <div class="wrap">
+        <p class="ask__bubble">„Kako si to napravio?“</p>
+      </div>
+    </section>
+
+    <!-- ============ COURSE ============ -->
+    <section class="sheet" data-theme="white" id="tecaj">
+      <div class="wrap course__grid">
+        <div class="course__left">
+          <p class="pill" data-pop><i></i>Tečaj</p>
+          <h2 class="h2 course__title" data-words>Zato sam napravio <span class="mark">tečaj.</span></h2>
+          <div class="prose">
+            <p>Kad sam krenuo, nisam imao nikoga tko bi mi rekao: „Nemoj tamo, nemoj to, ovo radi, ovo ne.“</p>
+            <p class="big">Platio sam svaku lekciju. Vremenom i novcem.</p>
+            <p>Tečaj je sve ono što bih volio da mi je netko dao prvi dan. Isti sustav po kojem vodim svoje brendove, korak po korak:</p>
+          </div>
+        </div>
+        <div class="course__right">
+          <ol class="mods">
+            <li class="mod"><span>Kako pronaći i provjeriti proizvod prije nego potrošiš novac</span><span class="mod__ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span></li>
+            <li class="mod"><span>Kako složiti ponudu koja prodaje</span><span class="mod__ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span></li>
+            <li class="mod"><span>Kako napraviti stranicu, advertorial i listicl</span><span class="mod__ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span></li>
+            <li class="mod"><span>Kako napraviti oglase koji zaustave palac</span><span class="mod__ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span></li>
+            <li class="mod"><span>Kako testirati, gasiti i skalirati</span><span class="mod__ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span></li>
+            <li class="mod"><span>Kako postaviti tracking i automatske mailove</span><span class="mod__ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span></li>
+            <li class="mod"><span>Kako koristiti AI da radiš sam ono za što drugi plaćaju tim</span><span class="mod__ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5.2 5.2L20 6.8"/></svg></span></li>
+          </ol>
+          <div class="course__no">
+            <p>Bez <span class="x">obećanja o brzoj zaradi</span>.</p>
+            <p>Bez <span class="x">slika skupih auta</span>.</p>
+            <p data-words>Samo ono što radi meni, svaki dan, <span class="mark">na stvarnom novcu.</span></p>
+          </div>
+          <div class="course__cta">
+            <a class="btn btn--xl" href="#kontakt" data-magnetic data-why="Tečaj">Želim na tečaj <span class="btn__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ONE SENTENCE ============ -->
+    <section class="sheet one" data-theme="soft">
+      <div class="wrap">
+        <p class="pill" data-pop><i></i>Ja u jednoj rečenici</p>
+        <p class="one__text" data-scrub>Gradim e-commerce brendove od nule, sam, uz AI, <i>i učim druge kako napraviti isto.</i></p>
+        <div class="one__sig">
+          <img src="/assets/img/leon-sq.webp" alt="" width="320" height="320" loading="lazy" />
+          <span class="sig">Leon</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="sheet contact" data-theme="pink" id="kontakt">
+      <span class="shape ring spin" style="width:420px;height:420px;left:-150px;bottom:-120px;--d:44s" aria-hidden="true"></span>
+      <span class="shape dotgrid float" style="width:200px;height:200px;left:30%;top:6%" aria-hidden="true"></span>
+      <div class="wrap contact__grid">
+        <div class="contact__left">
+          <p class="pill" data-pop><i></i>Kontakt</p>
+          <h2 class="h2 contact__title" data-words>Javi <span class="mark">mi se.</span></h2>
+          <p class="contact__lead">Za tečaj, suradnju ili samo pitanje, javi mi se preko forme. <b>Odgovaram osobno.</b></p>
+          <div class="contact__who">
+            <img src="/assets/img/leon-sq.webp" alt="Leon Ilišin" width="320" height="320" loading="lazy" />
+            <span><b>Leon Ilišin</b>Osijek, Hrvatska</span>
+          </div>
+        </div>
+
+        <div class="form" data-pop>
+          <form id="kontakt-forma" novalidate>
+            <div class="form__head"><b>Nova poruka</b><span class="form__dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+
+            <div class="field">
+              <label for="f-ime">Ime</label>
+              <input id="f-ime" name="ime" type="text" autocomplete="name" required />
+              <span class="field__err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" autocapitalize="off" required />
+              <span class="field__err" aria-live="polite"></span>
+            </div>
+
+            <fieldset class="why">
+              <legend>Zašto mi se javljaš?</legend>
+              <div class="why__opts">
+                <label class="why__opt"><input type="radio" name="razlog" value="Tečaj" checked /><span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2v13.6a1 1 0 0 0 1.5.86l11-6.8a1 1 0 0 0 0-1.72l-11-6.8A1 1 0 0 0 8 5.2z"/></svg>Tečaj</span></label>
+                <label class="why__opt"><input type="radio" name="razlog" value="Suradnja" /><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="16.4" cy="9" r="2.3"/><path d="M3.4 19c.6-3.2 2.8-5 5.6-5s5 1.8 5.6 5M15.4 14.2c2.6-.3 4.5 1.3 5.2 4.3"/></svg>Suradnja</span></label>
+                <label class="why__opt"><input type="radio" name="razlog" value="Pitanje" /><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 9a3 3 0 1 1 4.6 2.5c-1 .7-1.6 1.3-1.6 2.5M12 17.6v.2"/></svg>Pitanje</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="f-poruka">Poruka</label>
+              <textarea id="f-poruka" name="poruka" rows="3" required></textarea>
+              <span class="field__err" aria-live="polite"></span>
+            </div>
+
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form__foot">
+              <p class="form__note" aria-live="polite">Odgovaram osobno.</p>
+              <button class="btn btn--xl send" type="submit">Pošalji <span class="btn__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            </div>
+          </form>
+
+          <div class="form__done" aria-hidden="true" role="status">
+            <i class="confetti" style="--cx:150px;--cy:0px;--cr:90deg;border-radius:50%;"></i><i class="confetti" style="--cx:189px;--cy:91px;--cr:137deg;"></i><i class="confetti" style="--cx:168px;--cy:211px;--cr:184deg;"></i><i class="confetti" style="--cx:33px;--cy:146px;--cr:231deg;border-radius:50%;"></i><i class="confetti" style="--cx:-46px;--cy:204px;--cr:278deg;"></i><i class="confetti" style="--cx:-168px;--cy:211px;--cr:325deg;"></i><i class="confetti" style="--cx:-135px;--cy:65px;--cr:372deg;border-radius:50%;"></i><i class="confetti" style="--cx:-210px;--cy:0px;--cr:419deg;"></i><i class="confetti" style="--cx:-243px;--cy:-117px;--cr:466deg;"></i><i class="confetti" style="--cx:-93px;--cy:-117px;--cr:513deg;border-radius:50%;"></i><i class="confetti" style="--cx:-46px;--cy:-204px;--cr:560deg;"></i><i class="confetti" style="--cx:60px;--cy:-263px;--cr:607deg;"></i><i class="confetti" style="--cx:93px;--cy:-117px;--cr:654deg;border-radius:50%;"></i><i class="confetti" style="--cx:189px;--cy:-91px;--cr:701deg;"></i>
+            <span class="okbig"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 25l11 11L41 12"/></svg></span>
+            <h3>Poslano!</h3>
+            <p>Hvala, <span data-name>javim se</span>. Odgovaram osobno.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot sheet" data-theme="blue">
+    <span class="shape ring spin" style="width:320px;height:320px;right:-90px;top:-80px;--d:40s" aria-hidden="true"></span>
+    <span class="shape dotgrid float" style="width:180px;height:180px;left:4%;top:44%" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="foot__top">
+        <p class="foot__line" data-reveal>Gradim e-commerce brendove od nule, sam, uz AI, i učim druge kako napraviti isto.</p>
+        <div class="foot__col" data-reveal>
+          <h4>Stranica</h4>
+          <a href="/">Naslovnica</a>
+          <a href="/prica/">Moja priča</a>
+          <a href="/prica/#tecaj">Tečaj</a>
+          <a href="/prica/#kontakt">Kontakt</a>
+        </div>
+        <div class="foot__col" data-reveal>
+          <h4>Brendovi</h4>
+          <a href="https://luminiosa.com" target="_blank" rel="noopener">Luminiosa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+          <a href="https://stillhush.com" target="_blank" rel="noopener">Stillhush <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+          <a href="https://crushrose.com" target="_blank" rel="noopener">CrushRose <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+      <p class="foot__word" data-fit aria-hidden="true">Leon Ilišin</p>
+      <div class="foot__bar">
+        <span>Leon Ilišin · Osijek · E-commerce · AI · Tečaj</span>
+        <span>© 2026</span>
+        <a href="#main" data-top>Natrag na vrh ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/vendor/gsap.min.js" defer></script>
+  <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="/assets/vendor/lenis.min.js" defer></script>
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>
