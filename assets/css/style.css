@@ -196,31 +196,41 @@ html.is-intro .intro { display: grid; animation: intro-safety 0.6s var(--io) 7s 
 .strike { color: var(--navy); font-weight: 600; background: linear-gradient(var(--pink), var(--pink)) no-repeat 0 58% / var(--sx, 100%) 3px; }
 .hero__cta { margin-top: clamp(26px, 4vh, 40px); display: flex; flex-wrap: wrap; gap: 14px; }
 
-/* The stage: portrait + moving graphics */
-.stage { position: relative; aspect-ratio: 1 / 1.06; width: 100%; max-width: 560px; margin-inline: auto; }
-.stage__blob { position: absolute; inset: 6% 4% 2% 6%; background: var(--blue); animation: blob 12s ease-in-out infinite; }
-.stage__photo { position: absolute; left: 17%; right: 15%; top: 7%; bottom: 0; border-radius: 999px 999px 36px 36px; overflow: hidden; border: 8px solid var(--white); box-shadow: var(--sh); background: #1a1a1a; z-index: 2; }
-.stage__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 16%; }
-.stage .toast { left: -5%; top: 22%; }
-.stage .chartcard { right: -6%; bottom: 13%; }
-.stage .burst { right: 1%; top: 2%; width: 27%; }
-.toast { position: absolute; display: flex; align-items: center; gap: 12px; padding: 12px 18px 12px 12px; background: var(--white); border-radius: 20px; box-shadow: var(--sh); font-size: 14px; line-height: 1.25; color: var(--navy); white-space: nowrap; z-index: 3; }
-.toast b { display: block; font-family: var(--f-display); font-weight: 800; font-size: 15.5px; letter-spacing: -0.02em; }
-.toast span { color: rgba(10, 42, 60, 0.66); font-weight: 500; }
-.toast__ico { width: 40px; height: 40px; border-radius: 50%; background: var(--pink); color: var(--white); display: grid; place-items: center; flex: none; }
-.toast__ico svg { width: 20px; height: 20px; }
-.chartcard { position: absolute; width: min(210px, 42%); padding: 14px 16px 12px; background: var(--white); border-radius: 22px; box-shadow: var(--sh); color: var(--navy); z-index: 3; }
-.chartcard small { display: block; font-size: 12.5px; font-weight: 700; color: rgba(10, 42, 60, 0.6); }
-.chartcard b { display: block; font-family: var(--f-display); font-weight: 800; font-size: clamp(1.2rem, 1.9vw, 1.6rem); letter-spacing: -0.03em; line-height: 1.1; color: var(--blue); }
-.chartcard svg { width: 100%; height: auto; margin-top: 6px; overflow: visible; }
-.chart-line { fill: none; stroke: var(--pink); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 4.5s var(--io) infinite; }
-.chart-dot { fill: var(--pink); transform-box: fill-box; transform-origin: center; animation: dot 4.5s var(--io) infinite; }
-@keyframes draw { 0% { stroke-dashoffset: 1; opacity: 1; } 55%, 88% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
-@keyframes dot { 0%, 50% { transform: scale(0); } 60% { transform: scale(1.5); } 68%, 88% { transform: scale(1); } 100% { transform: scale(0); } }
-.burst { position: absolute; aspect-ratio: 1; z-index: 3; display: grid; place-items: center; color: var(--white); }
-.burst svg { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--pink); }
-.burst span { position: relative; font-family: var(--f-display); font-weight: 800; font-size: clamp(0.82rem, 1.25vw, 1.06rem); line-height: 1; text-align: center; letter-spacing: -0.02em; transform: rotate(-10deg); }
-.burst span b { display: block; font-size: 1.9em; letter-spacing: -0.04em; }
+/* The stage: one portrait seen through three capsule windows.
+   Everything is sized in cqw, so 100 = the stage width. */
+.stage { position: relative; container-type: inline-size; aspect-ratio: 100 / 112; width: 100%; max-width: 540px; margin-inline: auto; }
+.cap { position: absolute; left: calc(var(--x) * 1cqw); top: calc(var(--t) * 1cqw); width: calc(var(--w) * 1cqw); height: calc(var(--h) * 1cqw); clip-path: inset(0 round 999px); animation: cap-y var(--d, 8s) ease-in-out var(--dl, 0s) infinite; will-change: translate; }
+/* The window drifts, the portrait inside drifts the opposite way, so the person stays still */
+.cap__in { position: absolute; left: calc(var(--x) * -1cqw); top: calc(var(--t) * -1cqw); width: 100cqw; height: 112cqw; animation: cap-y var(--d, 8s) ease-in-out var(--dl, 0s) infinite reverse; }
+.cap__in img { position: absolute; left: 0; top: 0; width: 100%; height: auto; max-width: none; }
+@keyframes cap-y { 0%, 100% { translate: 0 calc(var(--a, 1.5) * -1cqw); } 50% { translate: 0 calc(var(--a, 1.5) * 1cqw); } }
+/* Blue and pink swap places, rising through the windows one after another */
+.cap__bg { position: absolute; left: 0; top: 0; width: 100%; height: 300%; display: block; animation: cap-bg 9s cubic-bezier(0.76, 0, 0.24, 1) var(--bd, 0s) infinite; }
+.cap__bg b { display: block; height: 33.3334%; background: var(--c1); }
+.cap__bg b:nth-child(2) { background: var(--c2); }
+@keyframes cap-bg { 0%, 39% { translate: 0 0; } 50%, 89% { translate: 0 -33.3334%; } 100% { translate: 0 -66.6667%; } }
+.cap--l, .cap--r { --c1: var(--pink); --c2: var(--blue); }
+.cap--m { --c1: var(--blue); --c2: var(--pink); --bd: 0.14s; }
+.cap--r { --bd: 0.28s; }
+
+/* Three misses, then a hit */
+.tick { position: absolute; left: 74.25cqw; top: 20cqw; width: 22cqw; aspect-ratio: 1; border-radius: 50%; background: var(--navy); color: var(--white); display: grid; place-items: center; overflow: hidden; }
+.tick span { grid-area: 1 / 1; display: grid; place-items: center; width: 100%; height: 100%; }
+.tick svg { width: 46%; height: 46%; }
+.tick__x { animation: tick-x 6s var(--back) infinite; }
+.tick__ok { background: var(--pink); color: var(--white); border-radius: 50%; animation: tick-ok 6s var(--ease) infinite; }
+.tick__ok svg path { stroke-dasharray: 30; animation: tick-draw 6s var(--io) infinite; }
+@keyframes tick-x { 0% { scale: 0; rotate: -90deg; } 6%, 15% { scale: 1; rotate: 0deg; } 19%, 20% { scale: 0; rotate: 40deg; } 20.01% { scale: 0; rotate: -90deg; } 26%, 35% { scale: 1; rotate: 0deg; } 39%, 40% { scale: 0; rotate: 40deg; } 40.01% { scale: 0; rotate: -90deg; } 46%, 55% { scale: 1; rotate: 0deg; } 59%, 100% { scale: 0; rotate: 40deg; } }
+@keyframes tick-ok { 0%, 58% { scale: 0; } 68%, 94% { scale: 1; } 100% { scale: 0; } }
+@keyframes tick-draw { 0%, 64% { stroke-dashoffset: 30; } 76%, 100% { stroke-dashoffset: 0; } }
+
+/* Browsers without container units get one plain capsule */
+@supports not (width: 1cqw) {
+  .cap--l, .cap--r, .tick, .cap__bg { display: none; }
+  .cap--m { position: absolute; inset: 0 14%; width: auto; height: auto; border-radius: 999px; overflow: hidden; background: var(--blue); animation: none; }
+  .cap--m .cap__in { position: absolute; inset: 0; width: auto; height: auto; animation: none; }
+  .cap--m .cap__in img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
+}
 
 /* ---------- Ribbons ---------- */
 .ribbons { position: relative; height: clamp(120px, 15vw, 190px); margin-top: clamp(10px, 3vh, 30px); z-index: 2; pointer-events: none; }
@@ -363,7 +373,7 @@ html.is-intro .intro { display: grid; animation: intro-safety 0.6s var(--io) 7s 
 .shero .hero__grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
 .shero__title { margin-top: 22px; }
 .shero__sub { margin-top: 24px; font-family: var(--f-display); font-weight: 700; letter-spacing: -0.025em; font-size: clamp(1.4rem, 2.5vw, 2.2rem); line-height: 1.16; max-width: 17em; color: var(--navy); }
-.bubble { position: absolute; left: -2%; top: 8%; z-index: 4; background: var(--pink); color: var(--white); font-family: var(--f-display); font-weight: 800; font-size: clamp(1.3rem, 2.3vw, 2rem); letter-spacing: -0.03em; padding: 14px 24px; border-radius: 28px 28px 6px 28px; box-shadow: var(--sh-sm); transform-origin: 100% 100%; }
+.bubble { position: absolute; left: 68%; top: 22%; z-index: 4; background: var(--navy); color: var(--white); font-family: var(--f-display); font-weight: 800; font-size: clamp(1.3rem, 2.3vw, 2rem); letter-spacing: -0.03em; padding: 14px 24px; border-radius: 28px 28px 28px 6px; box-shadow: var(--sh-sm); transform-origin: 0 100%; }
 .jump { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
 .jump a { font-weight: 700; font-size: 15px; padding: 11px 17px; border-radius: 999px; background: var(--blue-soft); color: var(--blue); transition: transform 0.5s var(--back), background 0.3s, color 0.3s; }
 .jump a:hover { transform: translateY(-4px) rotate(-2deg); background: var(--blue); color: var(--white); }
@@ -558,6 +568,7 @@ html.is-intro .intro { display: grid; animation: intro-safety 0.6s var(--io) 7s 
    ========================================================================== */
 html.js:not(.no-motion) [data-reveal], html.js:not(.no-motion) [data-pop] { opacity: 0; }
 html.js:not(.no-motion) [data-words]:not(.is-split) { visibility: hidden; }
+html.js:not(.no-motion) [data-caps]:not(.is-in) .cap { clip-path: inset(100% 0 0 0 round 999px); }
 html.js:not(.no-motion) .mark { --mk: 0; }
 html.js:not(.no-motion) .strike, html.js:not(.no-motion) .course__no .x { --sx: 0%; }
 html.js:not(.no-motion) .sig { --mp: 100%; }
@@ -580,8 +591,6 @@ html.js:not(.no-motion) .road__line i { --p: 0; }
   .hero__grid, .shero .hero__grid, .chap, .course__grid, .contact__grid { grid-template-columns: 1fr; }
   .hero__grid { gap: 44px; }
   .stage { max-width: 440px; }
-  .stage .toast { left: -2%; top: 16%; }
-  .stage .chartcard { right: -2%; }
   .chap--flip .chap__media { order: 0; }
   .chap { gap: 30px; }
   .scene { aspect-ratio: 1 / 0.92; }
@@ -608,8 +617,6 @@ html.js:not(.no-motion) .road__line i { --p: 0; }
   .g-flow svg { display: none; }
   .stats { grid-template-columns: 1fr; }
   .chip { padding: 9px 13px; }
-  .toast { padding: 9px 14px 9px 9px; font-size: 13px; }
-  .toast__ico { width: 34px; height: 34px; }
 }
 
 .no-motion .sheet { transform: none !important; }
